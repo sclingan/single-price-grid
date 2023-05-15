@@ -1,0 +1,56 @@
+@use 'css-reset';
+
+$primary-cyan: hsl(179, 62%, 43%);
+$primary-yellow: hsl(71, 73%, 54%);
+$neutral-gray: hsl(204, 43%, 93%);
+$neutral-blue: hsl(218, 22%, 67%);
+$font-size: 1rem;
+$ff: 'Karla';
+$fw-400: 400;
+$fw-700: 700;
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: $ff;
+    font-size: $font-size;
+    font-weight: $fw-400;
+    text-align: left;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}
+
+header {
+    // background-color: $neutral-gray;
+    color: $neutral-blue;
+}
+
+section {
+    background-color: $primary-cyan;
+    color: $neutral-gray;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+a {
+
+}
+
+ul {
+    list-style-type: none;
+}
+
