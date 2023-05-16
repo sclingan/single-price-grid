@@ -41,6 +41,12 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
+/*
+TODO:
+    fix anchor button
+    fix color of span text
+    fix border issue of container
+*/
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -54,13 +60,94 @@ p, h1, h2, h3, h4, h5, h6 {
 
 header {
   color: hsl(218, 22%, 67%);
+  padding-inline: 1rem;
+  padding-bottom: 2rem;
 }
 
 section {
   background-color: hsl(179, 62%, 43%);
   color: hsl(204, 43%, 93%);
+  padding-inline: 1rem;
+  padding-bottom: 2rem;
+}
+
+main {
+  background-color: hsl(179, 56%, 47%);
+  color: hsl(204, 43%, 93%);
+  padding-inline: 1rem;
+  text-align: left;
+  padding-bottom: 1.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+h2 {
+  color: hsl(71, 73%, 54%);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  padding-block: 1rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+span {
+  font-size: 1rem;
+  padding-left: 0.5rem;
+  vertical-align: 30%;
+}
+
+.p-price {
+  padding-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  text-align: center;
+  border-radius: 0.2rem;
+  padding: 0.8rem 4rem;
+  cursor: pointer;
 }
 
 ul {
   list-style-type: none;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+@media (min-width: 50rem) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 39.6875rem;
+  }
+  header {
+    grid-column: 1/3;
+    padding-inline: 1.5rem;
+  }
+  section {
+    grid-column: 1/1;
+    max-width: 19.6875rem;
+    padding-inline: 1.5rem;
+  }
+  main {
+    grid-column: 2/2;
+    max-width: 19.6875rem;
+    padding-inline: 1.5rem;
+  }
 }/*# sourceMappingURL=App.css.map */
