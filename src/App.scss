@@ -10,7 +10,7 @@ $fw-400: 400;
 $fw-700: 700;
 
 body {
-    background-color: beige;
+    background-color: hsl(37, 57%, 95%);
     display: grid;
     align-items: center;
     justify-content: center;
@@ -23,7 +23,6 @@ body {
     font-size: $font-size;
     font-weight: $fw-400;
     background-color: hsl(0, 0%, 100%);
-    text-align: left;
     border-radius: 0.5rem;
     overflow: hidden;
     max-width: 375px;
@@ -89,6 +88,10 @@ a {
     border-radius: 0.2rem;
     padding: 0.8rem 4rem;
     cursor: pointer;
+}
+
+a:hover {
+    background-color: hsl(71, 56%, 58%);
 }
 
 ul {

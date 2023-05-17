@@ -42,7 +42,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: beige;
+  background-color: hsl(37, 57%, 95%);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -55,7 +55,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   background-color: hsl(0, 0%, 100%);
-  text-align: left;
   border-radius: 0.5rem;
   overflow: hidden;
   max-width: 375px;
@@ -121,6 +120,10 @@ a {
   border-radius: 0.2rem;
   padding: 0.8rem 4rem;
   cursor: pointer;
+}
+
+a:hover {
+  background-color: hsl(71, 56%, 58%);
 }
 
 ul {
