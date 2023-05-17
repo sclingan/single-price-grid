@@ -41,34 +41,37 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/*
-TODO:
-    fix anchor button
-    fix color of span text
-    fix border issue of container
-*/
+body {
+  background-color: beige;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr;
   font-family: "Karla";
   font-size: 1rem;
   font-weight: 400;
+  background-color: hsl(0, 0%, 100%);
   text-align: left;
-  padding-inline: 2rem;
-  padding-block: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 375px;
 }
 
 header {
   color: hsl(218, 22%, 67%);
   padding-inline: 1rem;
-  padding-bottom: 2rem;
+  padding-block: 2rem;
 }
 
 section {
   background-color: hsl(179, 62%, 43%);
   color: hsl(204, 43%, 93%);
   padding-inline: 1rem;
-  padding-bottom: 2rem;
+  padding-block: 1.5rem;
 }
 
 main {
@@ -76,7 +79,7 @@ main {
   color: hsl(204, 43%, 93%);
   padding-inline: 1rem;
   text-align: left;
-  padding-bottom: 1.5rem;
+  padding-block: 1.5rem;
 }
 
 h1 {
@@ -96,14 +99,15 @@ h3 {
   padding-block: 1rem;
 }
 
-h4 {
+.price {
   font-size: 2rem;
 }
 
 span {
   font-size: 1rem;
-  padding-left: 0.5rem;
-  vertical-align: 30%;
+  padding-left: 0.3rem;
+  vertical-align: 25%;
+  color: hsl(0, 10%, 78%);
 }
 
 .p-price {
@@ -114,7 +118,6 @@ a {
   text-decoration: none;
   color: hsl(204, 43%, 93%);
   background-color: hsl(71, 73%, 54%);
-  text-align: center;
   border-radius: 0.2rem;
   padding: 0.8rem 4rem;
   cursor: pointer;
@@ -127,11 +130,6 @@ ul {
 }
 
 @media (min-width: 50rem) {
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   .container {
     grid-template-columns: 1fr 1fr;
     max-width: 39.6875rem;
@@ -142,12 +140,13 @@ ul {
   }
   section {
     grid-column: 1/1;
-    max-width: 19.6875rem;
     padding-inline: 1.5rem;
+  }
+  a {
+    padding: 0.8rem 6rem;
   }
   main {
     grid-column: 2/2;
-    max-width: 19.6875rem;
     padding-inline: 1.5rem;
   }
 }/*# sourceMappingURL=App.css.map */

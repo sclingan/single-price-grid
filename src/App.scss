@@ -9,12 +9,12 @@ $ff: 'Karla';
 $fw-400: 400;
 $fw-700: 700;
 
-/*
-TODO:
-    fix anchor button
-    fix color of span text
-    fix border issue of container
-*/
+body {
+    background-color: beige;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
 
 .container {
     display: grid;
@@ -22,22 +22,24 @@ TODO:
     font-family: $ff;
     font-size: $font-size;
     font-weight: $fw-400;
+    background-color: hsl(0, 0%, 100%);
     text-align: left;
-    padding-inline: 2rem;
-    padding-block: 2rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 375px;
 }
 
 header {
     color: $neutral-blue;
     padding-inline: 1rem;
-    padding-bottom: 2rem;
+    padding-block: 2rem;
 }
 
 section {
     background-color: $primary-cyan;
     color: $neutral-gray;
     padding-inline: 1rem;
-    padding-bottom: 2rem;
+    padding-block: 1.5rem;
 }
 
 main {
@@ -45,7 +47,7 @@ main {
     color: $neutral-gray;
     padding-inline: 1rem;
     text-align: left;
-    padding-bottom: 1.5rem;
+    padding-block: 1.5rem;
 }
 
 h1 {
@@ -65,14 +67,15 @@ h3 {
     padding-block: 1rem;
 }
 
-h4 {
+.price {
     font-size: 2rem;
 }
 
 span {
     font-size: $font-size;
-    padding-left: 0.5rem;
-    vertical-align: 30%;
+    padding-left: 0.3rem;
+    vertical-align: 25%;
+    color: hsl(0, 10%, 78%);
 }
 
 .p-price {
@@ -83,7 +86,6 @@ a {
     text-decoration: none;
     color: $neutral-gray;
     background-color: $primary-yellow;
-    text-align: center;
     border-radius: 0.2rem;
     padding: 0.8rem 4rem;
     cursor: pointer;
@@ -95,12 +97,6 @@ ul {
 }
 
 @media (min-width: 50rem) {
-
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
 
     .container {
         grid-template-columns: 1fr 1fr;
@@ -114,13 +110,15 @@ ul {
 
     section {
         grid-column: 1/1;
-        max-width: 19.6875rem;
         padding-inline: 1.5rem;
+    }
+
+    a {
+        padding: 0.8rem 6rem;
     }
 
     main {
         grid-column: 2/2;
-        max-width: 19.6875rem;
         padding-inline: 1.5rem;
     }
 }
