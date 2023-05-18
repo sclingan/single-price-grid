@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./public/images/screenshot.png)
 
 
 ### Links
@@ -49,16 +49,16 @@ Users should be able to:
 
 ### What I learned
 
-
+Trying to focus on using Grid, still had to use flexbox for centering content.
 
 ### Continued development
 
-
+I would like to return to this project and build out the backend.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- (https://validator.w3.org/) - Test your website!!
+- (https://developer.mozilla.org/en-US/) - A great resource for all things web dev.
 
 
 ## Author
@@ -68,4 +68,4 @@ Users should be able to:
 
 ## Acknowledgments
 
-
+Thank you to Frontend Mentor for a great challenge!
