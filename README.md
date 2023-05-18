@@ -33,8 +33,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://www.frontendmentor.io/solutions/frontend-mentor-single-price-grid-challenge-FQkz2hpj7b)
+- Live Site URL: (https://sclingan.github.io/single-price-grid/)
 
 ## My process
 
